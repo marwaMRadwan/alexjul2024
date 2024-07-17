@@ -1,0 +1,59 @@
+/* Normalize elements */
+*{ 
+    padding: 0; 
+    margin:0; 
+    box-sizing: border-box;
+}
+textarea{
+    resize: none;
+}
+ul, ol{
+    list-style-position: inside;
+}
+/* text settings */
+.text-white{ color: white;}
+.text-yellow{ color: rgb(180, 180, 178);}
+.text-center{ text-align: center}
+/* display settings */
+.inline-block{ display: inline-block;}
+/* main inputs settings */
+input, textarea{ 
+    border-radius: 5px;
+    border: none;
+    padding: 0.5rem;
+}
+::placeholder {
+    color: gray;
+  }
+/* background settings */
+.bg-main{
+    background-color: rgb(189, 240, 223);
+}
+/* main sizing */
+.row{
+    margin:auto;
+    width: 90%;
+}
+.w-50{ width:49%}
+.w-100{ width:100%}
+.col-5{ width:40%; vertical-align: middle;}
+.col-7{ width:59%; vertical-align: middle;}
+/* box style */
+.my{margin: 3% 0;}
+.ms-1{margin-left: 2%;}
+form div{margin-bottom: 3%;}
+.py{ padding: 3% 0;}
+h1,h2,h3,h4,h5,h6{
+    padding-bottom: 3%;
+}
+/* messages defaults */
+.alert-danger{
+    color: red;
+    padding: 2% 0;
+}
+.main-btn{
+    background-color:white;
+    border:green solid 2px;
+    padding: 2% 5%;
+    border-radius: 5px;
+}

@@ -1,0 +1,57 @@
+/* div{
+    width: 12.5rem; */
+    /* max-height: 7.5rem; */
+    /* min-height: 80vh;
+    border: solid 3px red;
+    outline: solid 2px black;
+}
+nav{ 
+    height: 5rem;
+    background: red;
+}
+section{
+    height: 10rem;
+    background: black;
+    min-height: calc(100vh - 12rem);
+}
+footer{
+    height: 7rem;
+    background: blue;
+}
+p,div{
+    display: inline-block;
+    width:50%
+}
+div{
+    height: 5rem;
+    width:5rem;
+    float:right
+} */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+nav{
+    height: 5rem;
+    background-color: brown;
+}
+footer{
+    height: 5rem;
+    background-color: brown;
+}
+#main{
+    min-height: calc(100vh - 10rem);
+}
+aside,#content{
+    display: inline-block;
+    min-height: calc( 100vh - 10rem);
+}
+aside{
+    width:29%;
+    background-color: brown;
+}
+#content{
+    width:70%;
+
+}

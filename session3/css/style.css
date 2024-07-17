@@ -94,4 +94,5 @@ span{
     height: 100px;
     line-height: 25px;
     overflow: hidden;
+    /* vertical-align: middle; */
 }
