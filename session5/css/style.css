@@ -1,0 +1,87 @@
+/* div{
+    border:2px solid red; */
+    /* box-shadow: 0 0 2px #eee ; */
+    /* width:25%; */
+    /* padding: 2%; */
+    /*box-sizing: border-box; */
+/* }
+div img{
+    max-width: 100%;
+}
+section{ */
+    /* width: 30%; */
+    /* display: flex;
+    flex-direction: row;column, row-reverse, column-reverse; */
+    /* height: 100vh; */
+    /* flex-wrap: wrap; /*no-wrap*/
+    /* justify-content: space-around;  */ 
+    /* flex-start , flex-end, center, space-around, space-between */
+    /* align-items: stretch;  */
+    /* flex-end, flex-start, center, stretch*/
+/* } */
+
+
+/* *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+    height: 100%;
+}
+.container{
+    width: 30%;
+    margin: 0 auto;
+} */
+/* .display-flex{ 
+    display: flex; 
+    border: solid 2px black; */
+    /* align-items: center; */
+/* } */
+/* .left-hand{
+    width:30% */
+    /* flex-grow: 1; */
+/* } */
+/* .right-hand{
+    width: 70%; */
+    /* flex-grow: 3; */
+    /* align-self: center;
+} */
+
+/* .container{
+    height: 20rem;
+    width: 90%;
+    margin: 0 auto;
+    border: 2px solid red;
+    position: relative;
+}
+.abs{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+}
+.container img{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+} */
+
+.parent{
+    height: 15rem;
+    width:40%;
+    margin: 0 auto;
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    position: relative;
+}
+.overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: red;
+    opacity: 0.1;
+}
+.c2{
+    color: black;
+}
