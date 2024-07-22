@@ -1,0 +1,105 @@
+/* body{
+    perspective: 600px;
+}
+div{
+    width:35rem;
+    height: 35rem;
+    background-image: url(../images/1.jpg);
+}
+div:hover{ */
+    /* transform: scale(1.2); */
+    /* transition: all 1s; */
+    /* transform: translate(100px, 150px); */
+    /* transform: rotateY(180deg); */
+    /* transform: skew(10deg, 15deg); */
+    /* backface-visibility: hidden;
+} */
+img{max-width: 100%;}
+/* .front, .back, .card {
+    height: 10rem;
+    width: 10rem;
+}
+.card{
+    position: relative;
+    perspective: 600px;
+}
+.front, .back{
+    position: absolute;
+    backface-visibility: hidden;
+}
+.front{
+    transform: rotateY(0deg);
+    background-color:white;
+}
+.back{
+    transform: rotateY(180deg);
+    background-color:white;
+}
+
+.card:hover .front{
+    transform: rotateY(180deg);
+    transition: all 1s;
+    backface-visibility: hidden;
+
+}
+.card:hover .back{
+    transform: rotateY(0deg);
+    transition: all 1s;
+    backface-visibility: hidden;
+
+} */
+/* .card{
+    position: relative;
+    perspective: 500px;
+    height: 15rem;
+    width: 15rem;
+}
+
+.front, .back{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+}
+.front{
+    transform: rotateX(0deg);
+}
+.back{
+    transform: rotateX(180deg);
+}
+
+.card:hover .front{
+    transform: rotateX(180deg);
+    transition: all 1.5s;
+}
+.card:hover .back{
+    transform: rotateX(0deg);
+    transition: all 1.5s;
+} */
+
+@keyframes mymovement {
+    /* from{
+        margin-top: 0;
+    }
+    to{
+        margin-top: 5rem;
+    } */
+        0%   {margin-top: 0%;}
+        25%  {margin-top: 2.5rem;}
+        50%  {margin-top: 5rem;}
+        75%  {margin-top: 2.5rem;}
+        100% {margin-top: 0px;}
+      
+}
+div{
+    height: 15rem;
+    width:15rem;
+    background-color: red;
+    animation-name: mymovement;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    /* animation-delay: 1s; */
+    /* animation-direction: alternate-reverse; */
+}
+
+
