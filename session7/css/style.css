@@ -1,0 +1,30 @@
+nav{
+    height: 5rem;
+    background-color: cadetblue;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    /* position: sticky; */
+}
+#one{
+    height: 15rem;
+    background-color: black;
+}
+#two{
+    height: 15rem;
+    background-color: rgb(245, 33, 33);
+}
+#three{
+    height: 15rem;
+    background-color: rgb(74, 26, 112);
+}
+#four{
+    height: 15rem;
+    background-color: rgb(36, 113, 5);
+}
+.btn{
+    position: fixed;
+    top:10rem;
+    background-color: black;
+    color: white;
+}
