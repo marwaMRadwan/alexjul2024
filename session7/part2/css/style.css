@@ -1,0 +1,23 @@
+:root{
+    --maincolor: #ea5252;
+    --mysize:1.2rem;
+}
+#logo{
+    width:7rem;
+}
+.nav-link{
+    color:var(--maincolor);
+    font-size: var(--mysize);
+}
+.nav-link.active{
+    color: blue!important;
+}
+.carousel-item{
+    max-height: 35rem;
+}
+.carousel-caption{
+    color: var(--maincolor)!important;
+}
+body{
+    height: 2000px;
+}
