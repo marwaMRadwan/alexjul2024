@@ -1,11 +1,11 @@
-nav{
+/* nav{
     height: 5rem;
     background-color: cadetblue;
     position: fixed;
     bottom: 0;
-    width: 100%;
+    width: 100%; */
     /* position: sticky; */
-}
+/* }
 #one{
     height: 15rem;
     background-color: black;
@@ -27,4 +27,55 @@ nav{
     top:10rem;
     background-color: black;
     color: white;
+}
+.mydiv{
+    width:50px;
+    border: 2px solid red;
+    word-wrap: break-word;
+} */
+/* section{
+    height: 25rem;
+    background-image: linear-gradient(to right, red 0%, blue 20%,green 40%, black 60%, white 80%) */
+    /* 121deg, #FDE376 0%, #FFF 100% */
+/* } */
+
+/* :root{
+    --main: black;
+    --sec: blue;
+    --z: 15rem;
+} */
+/* .myClass{
+    --x: #eee;
+} */
+/* section{
+    height: var(--z);
+    background-color: var(--main);
+} */
+ body, section{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ }
+img{
+    width: 2.5rem;
+    position: absolute;
+    animation-name: carmove;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.back{
+    background: url(../images/road.png);
+    background-size: 100% 100%;
+    position: relative;
+    width:100%;
+    height: 3rem;
+}
+
+@keyframes carmove {
+    from{
+        left: 0;
+    }
+    to{
+        left: 100%;
+    }
 }
