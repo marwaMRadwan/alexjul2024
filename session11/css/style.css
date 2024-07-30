@@ -1,0 +1,14 @@
+.myclass{
+    height: 5rem;
+    width: 5rem;
+    background: red;
+    margin: 2%;
+    /* display: inline-block; */
+}
+
+.card{
+    height: 2rem;
+}
+.parent:hover .card{
+    height: auto!important;
+}
