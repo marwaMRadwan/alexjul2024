@@ -23,22 +23,41 @@ const taskGenerator = (formData) =>{
     }
     return newData
 }
-const generateMyEle = (parent, ele, txt) =>{
+const generateMyEle = (parent, ele, txt, classList, ref) =>{
     let myele = document.createElement(ele)
     parent.appendChild(myele)
     if(txt) myele.textContent = txt
+    if(classList) myele.classList = classList
+    if(ref) myele.href = ref
     return myele
 }
 
 const drawAllTasks = (tasksArray) => {
+    allData.innerHTML=""
+    if(!tasksArray.length){
+        generateMyEle(allData, "div", "no data to show", "alert alert-danger", null)
+        return
+    }
     tasksArray.forEach(task=>{
         let tr = generateMyEle(allData, "tr", null);
         generateMyEle(tr, "th", task.id)
         generateMyEle(tr, "td", task.title);generateMyEle(tr, "td", task.description)
+        let td = generateMyEle(tr, "td", null)
+        generateMyEle(td, "a", "show", "btn btn-success me-3", `single.html?id=${task.id}`)
+        generateMyEle(td, "a", "edit", "btn btn-warning me-3", `edit.html?id=${task.id}`)
+        let delBtn = generateMyEle(td, "button", "delete", "btn btn-danger")
+        delBtn.addEventListener("click", function(e){
+            // console.log(task.id)
+            tasksArray = tasksArray.filter(t=>{
+                return t.id != task.id
+            })
+            writeToStorage(tasksArray)
+            // console.log(tasksArray)
+            // tr.remove()
+            drawAllTasks(tasksArray)
+        })
     })
 }
-
-
 
 if(addForm){
     addForm.addEventListener("submit", function(e){
